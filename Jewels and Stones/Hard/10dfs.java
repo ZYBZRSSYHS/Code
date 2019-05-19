@@ -5,20 +5,15 @@
         if (p.length() == 1) {
             return s.length() == 1 && (p.charAt(0) == s.charAt(0) || p.charAt(0) == '.');
         }
-
-        //第二位不是*
         if (p.charAt(1) != '*') {
             if (s.isEmpty()) return false;
             return (p.charAt(0) == s.charAt(0) || p.charAt(0) == '.')
                     && dfs(s.substring(1), p.substring(1));  //减小问题规模
         }
-
-        //第二位是*
         while (!s.isEmpty() && (p.charAt(0) == s.charAt(0) || p.charAt(0) == '.')) {
             if (dfs(s, p.substring(2))) return true;
             s = s.substring(1);
         }
-        // 前面没有匹配元素
         return dfs(s, p.substring(2));
     }
 
