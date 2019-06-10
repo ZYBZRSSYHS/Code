@@ -1,7 +1,8 @@
 class Solution {
     public int romanToInt(String s) {
         int result = 0;
-        for(int i = 0; i < s.length(); i++) {
+        int len = s.length();
+        for(int i = 0; i < len; i++) {
             switch(s.charAt(i)) {
                 case 'I': 
                     result += 1;
@@ -26,7 +27,7 @@ class Solution {
                     break;
             }
         }
-    for(int j=0;j<s.length()-1;j++){
+    for(int j=0;j<len-1;j++){
         switch(""+s.charAt(j)+s.charAt(j+1)){
             case "IV":
                 case "IX":
