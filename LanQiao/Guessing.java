@@ -1,10 +1,7 @@
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.util.Vector;
-
-import com.sun.tools.javac.util.List;
-import com.sun.xml.internal.stream.Entity.ScannedEntity;
-
-import jdk.nashorn.internal.parser.Scanner;
 
 /**
  * 
@@ -72,7 +69,7 @@ public class Guessing{
     }
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int n=9;
         Vector<Character> sourse = new Vector<Character>();
         Vector<Character> result = new Vector<Character>();
@@ -88,3 +85,22 @@ public class Guessing{
         }
     }
 }
+
+/**
+ * 
+ * 
+ * 
+46 x 79 = 23 x 158
+54 x 69 = 27 x 138
+54 x 93 = 27 x 186
+58 x 67 = 29 x 134
+58 x 69 = 23 x 174
+58 x 73 = 29 x 146
+58 x 96 = 32 x 174
+63 x 74 = 18 x 259
+64 x 79 = 32 x 158
+73 x 96 = 12 x 584
+76 x 98 = 14 x 532
+ * 
+ * 
+ */
