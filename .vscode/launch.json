@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - H2O",
+            "request": "launch",
+            "mainClass": "Hard.H2O",
+            "projectName": "Code_49670d59"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FullFormula",
             "request": "launch",
             "mainClass": "FullFormula",
