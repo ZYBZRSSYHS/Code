@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Convert",
+            "request": "launch",
+            "mainClass": "Convert",
+            "projectName": "Code_49670d59"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Code_49670d59"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - H2O",
             "request": "launch",
             "mainClass": "Hard.H2O",
